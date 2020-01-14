@@ -5250,7 +5250,7 @@
 					navigateNext();
 				}
 				else {
-					navigateNext();
+					navigateDown();
 				}
 			}
 			// HOME
