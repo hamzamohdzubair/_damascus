@@ -6,7 +6,7 @@ title: NLP102
 logoImg: https://i.imgur.com/Xpd2e0z.jpg
 ---
 
-# NLP 102
+# NLP 103
 
 Hamza Mohd. Zubair
 
