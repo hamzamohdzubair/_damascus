@@ -5817,7 +5817,7 @@
 		left: navigateLeft,
 		right: navigateRight,
 		up: navigateUp,
-		down: navigateDown,
+		down: navigateNext,
 		prev: navigatePrev,
 		next: navigateNext,
 

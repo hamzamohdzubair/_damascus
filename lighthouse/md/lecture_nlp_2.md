@@ -2,8 +2,6 @@
 theme: beige
 transition: slide
 slideNumber: true
-mouseWheel: true
-navigationMode: 'linear'
 title: NLP102
 logoImg: https://i.imgur.com/Xpd2e0z.jpg
 ---
@@ -31,5 +29,3 @@ Hamza Mohd. Zubair
 7. Constituency Parsing {.fragment}
 8. Dependency Parsing {.fragment}
 9. Recurrent Networks {.fragment}
-
----
