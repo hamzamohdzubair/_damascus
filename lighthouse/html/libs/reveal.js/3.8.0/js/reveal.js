@@ -1439,7 +1439,7 @@
 			keyboardShortcuts['&#8592;  ,  &#8593;  ,  P  ,  H  ,  K']           = 'Previous slide';
 		}
 		else {
-			keyboardShortcuts['N  ,  SPACE', '&#8595']   = 'Next slide';
+			keyboardShortcuts['N  ,  SPACE  ,  &#8595']   = 'Next slide';
 			keyboardShortcuts['P']             = 'Previous slide';
 			keyboardShortcuts['&#8592;  ,  H'] = 'Navigate left';
 			keyboardShortcuts['&#8594;  ,  L'] = 'Navigate right';
