@@ -5250,7 +5250,7 @@
 					navigateNext();
 				}
 				else {
-					navigateDown();
+					navigateNext();
 				}
 			}
 			// HOME
@@ -5817,7 +5817,7 @@
 		left: navigateLeft,
 		right: navigateRight,
 		up: navigateUp,
-		down: navigateNext,
+		down: navigateDown,
 		prev: navigatePrev,
 		next: navigateNext,
 
