@@ -295,6 +295,29 @@ Metacharacters {.fragment}
 
 Try this
 ```
+navratri
+```
+
+> Navratri
+
+> Navaratri
+
+--
+
+Answer
+```
+nava?ratri
+```
+
+--
+
+### ?
+Quantifier {.fragment}
+
+--
+
+Try this
+```
 hello
 ```
 
@@ -325,6 +348,87 @@ Quantifier | Meaning
 ? | 0 or 1
 * | 0 or more
 + | 1 or more
+
+--
+
+Try this
+```
+alo{1,20}t
+```
+
+--
+
+Try this
+```
+.
+```
+
+--
+
+Find the difference
+```
+.
+```
+```
+.*
+```
+--
+
+#### Metasequences
+
+Metasequence | Meaning| Opposite
+-------------|-----|----
+\d | 0-9 | \D
+\w | a-zA-Z | \W
+\s | \<space> | \S
+
+Try them
+```
+\d
+\w
+\s
+```
+--
+
+Find the difference
+```
+.in
+```
+```
+\win
+```
+
+--
+
+Find the difference
+```
+\win
+```
+```
+\bwin
+```
+```
+\bwin\b
+```
+--
+
+### Anchors
+
+Anchors| Meaning
+----|----
+\b | word boundary
+^ | Beginning of sentence
+$ | End of sentence
+--
+
+Find the difference
+```
+\d
+```
+```
+\d+
+```
+--
 
 
 ---
