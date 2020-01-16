@@ -436,6 +436,12 @@ Find the difference
 
 #### Exercise
 
+> Find all websites
+
+> Find all phone numbers
+
+> Find all email ids
+
 > Find all Diwalis
 
 --
