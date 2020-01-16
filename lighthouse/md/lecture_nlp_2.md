@@ -233,10 +233,20 @@ Answer
 19\\d0
 ```
 
+--
+
+> [1][2][3]...
+
+--
+
+Answer
+```
+\[\d]
+```
+
 ---
 
-### Summary 
-#### Tutorial 1
+### Summary
 
 --
 
@@ -278,6 +288,47 @@ Metacharacters {.fragment}
 
 
 ---
+
+## Tutorial 2
+
+--
+
+Try this
+```
+hello
+```
+
+--
+
+> Match all spellings of hello
+
+--
+
+Try this
+```
+hell*o
+```
+
+--
+
+Try this
+```
+hell+o
+```
+
+--
+
+#### Quantifiers
+
+Quantifier | Meaning
+------|----
+? | 0 or 1
+* | 0 or more
++ | 1 or more
+
+
+---
+
 
 #### Exercise
 
