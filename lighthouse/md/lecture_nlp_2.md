@@ -251,6 +251,7 @@ Answer
 --
 
 ### []
+
 Character set {.fragment}
 Disjunction set {.fragment}
 
@@ -379,7 +380,7 @@ Find the difference
 Metasequence | Meaning| Opposite
 -------------|-----|----
 \d | 0-9 | \D
-\w | a-zA-Z | \W
+\w | a-zA-Z0-9 | \W
 \s | \<space> | \S
 
 Try them
@@ -405,10 +406,10 @@ Find the difference
 \win
 ```
 ```
-\bwin
+\b\win
 ```
 ```
-\bwin\b
+\b\win\b
 ```
 --
 
@@ -461,24 +462,6 @@ Answer
 - Quantifiers
 - Groups
 - Flags/Modifiers
-
----
-
-## Anchors
-
----
-
-## Qurantifiers
-
----
-
-## Flags
-
-
-```
-/<expression>/<flags>
-
-```
 
 ---
 
