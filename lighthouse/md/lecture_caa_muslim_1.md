@@ -3,11 +3,11 @@ theme: beige
 transition: slide
 slideNumber: true
 enableZoom: true
-title: NLP102
+title: Why oppose CAA
 logoImg: https://i.imgur.com/Xpd2e0z.jpg
 ---
 
-# Why CAA is a Blunder
+# Why oppose CAA
 
 Hamza Mohd. Zubair
 
