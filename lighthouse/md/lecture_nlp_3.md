@@ -85,7 +85,7 @@ corpus of scrapped text from the web {.fragment .current-only data-code-focus=9-
 
 Exercise
 
-> Print out first 100 characters of each file
+> Print out first 100 characters of each file in webtext
 
 ```{.fragment}
 for file in webtext.fileids():
