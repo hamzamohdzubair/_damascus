@@ -254,7 +254,7 @@ w = [w for w in set(text_object) if len(w) > 6 and dist[w] > 15]
 - Employees in Corporations {.fragment}
 - Number of people watching a TV show {.fragment}
 
---
+---
 
 #### N-grams
 
@@ -342,8 +342,8 @@ dist.most_common(20)
 puzzle_letters = nltk.FreqDist('egivrvonl')
 obligatory = 'r'
 wordlist = nltk.corpus.words.words()
-[w for w in wordlist if len(w) >= 4 [1]
-                     and obligatory in w [2]
+[w for w in wordlist if len(w) >= 4
+                     and obligatory in w
                      and nltk.FreqDist(w) <= puzzle_letters]
 ```
 
@@ -408,7 +408,7 @@ Largest Computational Linguistics Project {.fragment}
 
 --
 
-#### Wordnet
+#### Wordnet getting started
 
 ```python
 from nltk.corpus import wordnet as wn
@@ -416,16 +416,28 @@ from nltk.corpus import wordnet as wn
 wn.synsets('car')
 wn.synsets('car')[0].definition()
 wn.synsets('car')[0].example()
+wn.synsets('car')[0].lemma_names()
+wn.synsets('auto')
+wn.synsets('machine')
+wn.synset('car.n.01')
+wn.synset('car.n.02').lemma_names()
 ```
 
 load wordnet {.fragment .current-only data-code-focus=1}
 
-one word different meanings {.fragment .current-only data-code-focus=3}
+main unit of wordnet "synonym set" {.fragment .current-only data-code-focus=3}
 
 definition {.fragment .current-only data-code-focus=4}
 
-example {.fragment .current-only data-code-focus=5}
+example sentences {.fragment .current-only data-code-focus=5}
 
+Words that point to the same synset and mean the same thing {.fragment .current-only data-code-focus=6}
+
+Words that have one synset are called unambiguous, otherwise they are ambiguous {.fragment .current-only data-code-focus=7-8}
+
+selecting a synset {.fragment .current-only data-code-focus=9}
+
+The words that mean the second sense of car {.fragment .current-only data-code-focus=10}
 
 {.fragment .current-only data-code-focus=1-10}
 
@@ -433,10 +445,87 @@ example {.fragment .current-only data-code-focus=5}
 
 Exercise
 
-> Print out the definition and example sentences for each synset
+> Print out the list of words that make a synset, definition and example sentences for each synset
 
 ```{.fragment}
-for syns in wn.synsets('car'):
-    print(f'Def: {syns.definition()}')
-    print(f'Ex: {syns.examples()}')
+for syn in wn.synsets('car'):
+    print(syn.name())
+    print(syn.lemma_names())
+    print(f'Def: {syn.definition()}')
+    print(f'Ex: {syn.examples()}\n')
 ```
+
+--
+
+#### Wordnet Lexical relations
+
+```python
+from nltk.corpus import wordnet as wn
+wn.synsets('cat')
+
+cat = wn.synset('cat.n.01')
+cat.definition()
+cat.hyponyms()
+cat.hypernyms()
+
+cat.hypernym_paths()
+cat.path_similarity(wn.synsets('dog.n.01'))
+
+wn.synset('cat.n.01').lowest_common_hypernyms(wn.synset('dog.n.01'))
+```
+
+synsets {.fragment .current-only data-code-focus=1-2}
+
+check definition {.fragment .current-only data-code-focus=4-5}
+
+one-level up and down {.fragment .current-only data-code-focus=6-7}
+
+path similarity {.fragment .current-only data-code-focus=9-10}
+
+node of divergence {.fragment .current-only data-code-focus=12}
+
+{.fragment .current-only data-code-focus=1-20}
+
+---
+
+#### Summary
+
+- Corpus {.fragment}
+    - Files, words, sents, categories
+    - Brown, Gutenberg, Retuers, NPS_Chat, Hindi
+- Types and Tokens {.fragment}
+    - Percentage
+    - Lexical Diversity
+- Text Objects {.fragment}
+    - Counts, Frequency Distributions, Most Common Words, Hapaxes
+    - Concordance, Similar Context, Common Contexts, Dispersion Plots
+- Zipf's Law {.fragment}
+--
+
+#### Summary
+
+- Ngrams {.fragment}
+    - Bigrams, Trigrams
+    - Collocations
+- Lexicon {.fragment}
+    - Difference between Lexicon and corpus, dictionary, stopwords
+    - Conditional Frequency Distribution
+- Wordnet {.fragment}
+    - Difference between wordnet and dictionary
+    - Applications
+    - Synsets, Lemmas
+    - Lexical Relations: Hyponyms, Hypernyms and Paths
+
+--
+
+#### Exercise
+
+> Word Puzzle
+
+> Play with Wordnet
+
+--
+
+Thanks!
+
+All the best!
