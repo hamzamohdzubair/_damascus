@@ -24,6 +24,8 @@ Hamza Mohd. Zubair
 
 ### Let's Practice!
 
+Start a New Notebook on Kaggle
+
 
 ---
 
